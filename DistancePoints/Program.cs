@@ -1,0 +1,17 @@
+﻿Console.Write ("Введите координаты первой точки по оси X ");
+int x1 = int.Parse (Console.ReadLine ());
+Console.Write ("Введите координаты первой точки по оси Y ");
+int y1 = int.Parse (Console.ReadLine ());
+Console.Write ("Введите координаты первой точки по оси Z Если пространство двумерное вставьте 0 ");
+int z1 = int.Parse (Console.ReadLine ());
+Console.Write ("Введите координаты второй точки по оси X ");
+int x2 = int.Parse (Console.ReadLine ());
+Console.Write ("Введите координаты второй точки по оси Y ");
+int y2 = int.Parse (Console.ReadLine ());
+Console.Write ("Введите координаты второй точки по оси Z Если пространство двумерное вставьте 0 ");
+int z2 = int.Parse (Console.ReadLine ());
+int x=x2-x1;
+int y=y2-y1;
+int z=z2-z1;
+double distance = Math.Sqrt(Math.Pow(x,2) + Math.Pow(y,2) + Math.Pow(z,2));
+Console.WriteLine ("Расстояние между точками равно: "+distance);
