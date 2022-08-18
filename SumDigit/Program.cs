@@ -2,11 +2,11 @@
 string numb= Console.ReadLine();
 int count =0;
 int sum=0;
-while (count != null)
+while (count <= numb.Length-1)
     {
-    char digitTxt = numb[count];
-    int digit = int.Parse (digitTxt);
+    Char digitTxt = numb[count];
+    int digit = (int)(digitTxt-'0');
     sum=sum+digit;
     count++;
     }
-    Console.Write ("summ digit in your number = "+sum);
+Console.Write ("summ digit in your number = "+sum);
